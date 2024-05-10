@@ -33,7 +33,7 @@ header {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  padding: 5%;
+  padding: 30px;
   width: 40%;
   height: 100%;
 }
@@ -47,6 +47,7 @@ header {
     width: 100%;
   }
   .content > * {
-    width: 70%;
+    height: 70vw;
+    width: 70vw;
   }
 }/*# sourceMappingURL=app.component.css.map */

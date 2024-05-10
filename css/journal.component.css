@@ -1,11 +1,13 @@
+.journal {
+  height: 100%;
+}
+
 .entry_list_row {
-  height: 135%;
+  height: calc(100% - 2rem - 80px);
 }
 
 .new_btn_row {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  justify-self: flex-end;
+  align-items: center;
 }/*# sourceMappingURL=journal.component.css.map */

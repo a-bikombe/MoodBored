@@ -1,5 +1,12 @@
+.stats {
+  height: 100%;
+}
+
 .stats_col {
   display: flex;
   flex-direction: column;
+  height: calc(100% - 2rem - 60px);
+  justify-content: center;
+  row-gap: 20px;
   text-align: center;
 }/*# sourceMappingURL=stats.component.css.map */

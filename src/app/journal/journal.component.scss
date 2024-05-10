@@ -1,12 +1,18 @@
-.new_btn_col {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-self: flex-end;
+.journal {
+	height: 100%;
+}
+
+.entry_list_label {
+	height: 15%;
 }
 
 .entry_list_row {
+	height: calc(90% - 45px - 2rem);
+}
+
+.new_btn_row {
 	display: flex;
 	flex-direction: row;
-	overflow: auto;
+	justify-content: center;
+	height: 45px;
 }

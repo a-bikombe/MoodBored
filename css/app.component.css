@@ -17,7 +17,9 @@ header {
 
 .content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
   margin-bottom: 5vh;
   max-width: 1000px;
   width: 100vw;
@@ -31,6 +33,7 @@ header {
   overflow: auto;
   padding: 5%;
   width: 40%;
+  height: auto;
 }
 
 @media screen and (max-width: 650px) {

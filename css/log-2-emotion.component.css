@@ -1,5 +1,6 @@
 .next_row.emotion {
-  display: flex;
   flex-direction: row;
   justify-content: center;
+  height: calc(100% - 40px);
+  align-items: flex-end;
 }/*# sourceMappingURL=log-2-emotion.component.css.map */

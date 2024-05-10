@@ -1,6 +1,6 @@
-<div class="mood">
+<div class="mood" id="mood_page">
     <div class="cancel_row">
-        <button class="cancel">Cancel</button>
+        <button class="cancel" id="cancel_mood" (click)="cancel()">Cancel</button>
     </div>
     <div class="mood_col">
         <h3 class="help_label mood">Choose how you're feeling right now</h3>
@@ -14,6 +14,6 @@
         </div>
     </div>
     <div class="next_row mood">
-        <button class="next_btn mood">Next</button>
+        <button class="next_btn mood" id="mood_btn" (click)="nextPage()">Next</button>
     </div>
 </div>

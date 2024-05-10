@@ -2,7 +2,7 @@
 	height: 100%;
 }
 
-.cancel_row, .mood_col, .next_row.mood {
+.cancel_row, .mood_col, .next_row {
 	display: flex;
 }
 
@@ -14,6 +14,13 @@
 .mood_col {
 	flex-direction: column;
 	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
 }
 
 .mood_display_row {
@@ -31,11 +38,4 @@
 
 .next_btn {
 	height: 45px;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: center;
 }

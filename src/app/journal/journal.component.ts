@@ -1,11 +1,26 @@
 import { Component } from '@angular/core';
-import { JournalEntryComponent } from './journal-entry/journal-entry.component';
 
 @Component({
     selector: 'journal',
     standalone: true,
-    imports: [JournalEntryComponent],
+    imports: [],
     templateUrl: './journal.component.html',
     styleUrl: './journal.component.scss',
 })
-export class JournalComponent {}
+export class JournalComponent {
+	new() {
+		var newEntry = document.getElementById("new_btn");
+		newEntry?.addEventListener('click', function(e) {
+			document.getElementById('entries')?.setAttribute("hidden", "");
+			document.getElementById('journal_entry')?.removeAttribute("hidden");
+		});
+	}
+
+	back() {
+		var backButton = document.getElementById("back_entry");
+		backButton?.addEventListener('click', function(e) {
+			document.getElementById('journal_entry')?.setAttribute("hidden", "");
+			document.getElementById('entries')?.removeAttribute("hidden");
+		});
+	}
+}

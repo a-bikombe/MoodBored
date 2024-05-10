@@ -1,0 +1,18 @@
+.cancel_row, .mood_col, .next_row.mood {
+	display: flex;
+}
+
+.cancel_row {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.mood_col {
+	flex-direction: column;
+	text-align: center;
+}
+
+.next_row.mood {
+	flex-direction: row;
+	justify-content: center;
+}

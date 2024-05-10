@@ -1,1 +1,5 @@
-/*# sourceMappingURL=log-3-triggers.component.css.map */
+.next_row.triggers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}/*# sourceMappingURL=log-3-triggers.component.css.map */

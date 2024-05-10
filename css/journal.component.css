@@ -1,1 +1,12 @@
-/*# sourceMappingURL=journal.component.css.map */
+.new_btn_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.entry_list_row {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}/*# sourceMappingURL=journal.component.css.map */

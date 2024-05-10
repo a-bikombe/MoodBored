@@ -30,10 +30,12 @@ header {
   background: white;
   border: 3px solid black;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   overflow: auto;
   padding: 5%;
   width: 40%;
-  height: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 650px) {

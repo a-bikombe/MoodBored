@@ -5,15 +5,28 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './log-3-triggers.component.html',
-    styleUrl: './log-3-triggers.component.scss',
+    styleUrls: ['../log-new-mood.component.scss', './log-3-triggers.component.scss']
 })
 export class Log3TriggersComponent {
 	cancel() {
-		var cancelTriggers = document.getElementById("cancel_triggers");
+		let cancelTriggers = document.getElementById("cancel_triggers");
+		let homePage = document.getElementById('home');
+		let logMoodPage = document.getElementById('log_new_mood');
+
 		cancelTriggers?.addEventListener('click', function(e) {
-			document.getElementById('mood_page')?.removeAttribute("hidden");
-			document.getElementById('emotion_page')?.setAttribute("hidden", "");
-			document.getElementById('triggers_page')?.setAttribute("hidden", "");
+			homePage?.setAttribute('style', 'display: flex;');
+			logMoodPage?.setAttribute('style', 'display: none;');
+		});
+	}
+
+	done() {
+		let doneButton = document.getElementById("done_btn");
+		let homePage = document.getElementById('home');
+		let logMoodPage = document.getElementById('log_new_mood');
+
+		doneButton?.addEventListener('click', function(e) {
+			homePage?.setAttribute('style', 'display: flex;');
+			logMoodPage?.setAttribute('style', 'display: none;');
 		});
 	}
 }

@@ -1,13 +1,13 @@
-<div class="mood" id="mood_page">
+<div class="log_page mood" id="mood_page">
     <div class="cancel_row">
-        <button class="cancel" id="cancel_mood" (click)="cancel()">
+        <button type="button" class="cancel" id="cancel_mood" (mousedown)="cancel()">
             Cancel
         </button>
     </div>
     <div class="mood_col">
         <h3 class="help_label mood">Choose how you're feeling right now</h3>
-        <div class="slider">
-            <h4 class="mood_slider_label">Neutral</h4>
+        <div class="slider_col">
+            <h4 class="slider_label">Neutral</h4>
             <input
                 type="range"
                 class="mood_slider"
@@ -16,14 +16,14 @@
                 max="10"
                 step="1"
             />
-            <div class="mood_display_row">
+            <div class="unpleasant_pleasant_labels_row">
                 <p class="very_unpleasant_label">Very Unpleasant</p>
                 <p class="very_pleasant_label">Very Pleasant</p>
             </div>
         </div>
 
         <div class="next_row mood">
-            <button class="next_btn mood" id="mood_btn" (click)="nextPage()">
+            <button type="button" class="next_btn mood" id="mood_btn" (mousedown)="nextPage()">
                 Next
             </button>
         </div>

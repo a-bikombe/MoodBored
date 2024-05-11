@@ -1,7 +1,3 @@
-.stats {
-  height: 100%;
-}
-
 .stats_col {
   display: flex;
   flex-direction: column;

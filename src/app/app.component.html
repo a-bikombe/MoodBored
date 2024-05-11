@@ -3,27 +3,52 @@
 <!-- VS Code Documentation: https://code.visualstudio.com/docs/nodejs/angular-tutorial -->
 
 <main class="main">
-	<header>
-		<h1>MoodBored</h1>
-	</header>
-	<div class="navbar">
-		<a class="nav_link" id="link_home" (click)="showPage('link_home', 'home')" href="#">Home</a>
-		<a class="nav_link" id="link_stats" (click)="showPage('link_stats', 'stats')" href="#stats">Stats</a>
-		<a class="nav_link" id="link_journal" (click)="showPage('link_journal', 'journal')" href="#journal">Journal</a>
+    <header>
+        <h1>MoodBored</h1>
+    </header>
+    <div class="navbar">
+        <button
+            type="button"
+            class="nav_link"
+            id="link_home"
+            (mousedown)="showPage('link_home', 'home')"
+        >
+            Home
+        </button>
+        <button
+            type="button"
+            class="nav_link"
+            id="link_stats"
+            (mousedown)="showPage('link_stats', 'stats')"
+        >
+            Stats
+        </button>
+        <button
+            type="button"
+            class="nav_link"
+            id="link_journal"
+            (mousedown)="showPage('link_journal', 'journal')"
+        >
+            Journal
+        </button>
+    </div>
+
+    <div class="page_component" id="home" style="display: flex;">
+        <past-moods></past-moods>
+    </div>
+	<div class="page_component" id="log_new_mood" style="display: none;">
+		<log-new-mood></log-new-mood>
 	</div>
 
-	<div class="page_component" id="home">
-		<past-moods></past-moods>
-	</div>
+    <div class="page_component" id="stats" style="display: none;">
+        <stats></stats>
+    </div>
 
-	<div class="page_component" id="stats">
-		<stats></stats>
-	</div>
+    <div class="page_component" id="journal" style="display: none;">
+        <journal></journal>
+    </div>
 
-	<div class="page_component" id="journal">
-		<journal></journal>
-	</div>
-	<!-- <log-new-mood></log-new-mood> -->
+	
 </main>
 
 <router-outlet />

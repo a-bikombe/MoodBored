@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './journal.component.html',
-    styleUrl: './journal.component.scss',
+    styleUrls: ['../app.component.scss', './journal.component.scss']
 })
 export class JournalComponent {
 	new() {

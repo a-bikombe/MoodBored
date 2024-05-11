@@ -15,6 +15,7 @@ header {
   width: 100%;
 }
 
+/* NAVBAR */
 .navbar {
   align-items: center;
   background-color: white;
@@ -29,30 +30,45 @@ header {
   width: 70%;
 }
 
-.navbar a {
+.navbar button {
+  background-color: transparent;
+  border: none;
   color: black;
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar button:hover {
   color: salmon;
 }
 
-#home, #stats, #journal {
+.navbar button:active {
+  color: darkred;
+}
+
+/* PAGES */
+.page_component {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 70%;
 }
 
-#stats {
-  display: none;
+/* "NEW" BUTTON */
+.new_btn_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#journal {
-  display: none;
+.new_btn {
+  border-radius: 100px;
+  height: 45px;
+  width: 30vw;
 }
 
+/* RESPONSIVE SCREENS */
 @media screen and (max-width: 650px) {
   .navbar {
     width: 60%;

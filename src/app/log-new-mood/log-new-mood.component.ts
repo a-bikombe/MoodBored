@@ -8,6 +8,6 @@ import { Log3TriggersComponent } from './log-3-triggers/log-3-triggers.component
     standalone: true,
     imports: [Log1MoodComponent, Log2EmotionComponent, Log3TriggersComponent],
     templateUrl: './log-new-mood.component.html',
-    styleUrl: './log-new-mood.component.scss',
+    styleUrls: ['../app.component.scss', './log-new-mood.component.scss']
 })
 export class LogNewMoodComponent {}

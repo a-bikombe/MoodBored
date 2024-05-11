@@ -1,8 +1,8 @@
 # TODO
 
 ## App
-- [ ] Create components for features
-- [ ] Code
+- [x] Create components for features
+- [x] Code
 	- [ ] 
 - [ ] Layout
 - [ ] Styling

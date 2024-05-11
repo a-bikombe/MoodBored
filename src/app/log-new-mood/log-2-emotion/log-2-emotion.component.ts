@@ -5,15 +5,17 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './log-2-emotion.component.html',
-    styleUrl: './log-2-emotion.component.scss',
+    styleUrls: ['../log-new-mood.component.scss', './log-2-emotion.component.scss'],
 })
 export class Log2EmotionComponent {
 	cancel() {
-		var cancelEmotion = document.getElementById("cancel_emotion");
+		let cancelEmotion = document.getElementById("cancel_emotion");
+		let homePage = document.getElementById('home');
+		let logMoodPage = document.getElementById('log_new_mood');
+
 		cancelEmotion?.addEventListener('click', function(e) {
-			document.getElementById('mood_page')?.removeAttribute("hidden");
-			document.getElementById('emotion_page')?.setAttribute("hidden", "");
-			document.getElementById('triggers_page')?.setAttribute("hidden", "");
+			homePage?.setAttribute('style', 'display: flex;');
+			logMoodPage?.setAttribute('style', 'display: none;');
 		});
 	}
 }

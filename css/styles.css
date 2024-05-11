@@ -27,30 +27,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* SECTIONS */
 body {
   background-color: #EAEAF0;
   margin: 3vh 0px;
 }
 
-.next_btn, .new_btn {
-  border-radius: 100px;
-  height: 45px;
-  width: 90%;
+/* COMPONENTS */
+button:hover {
+  cursor: pointer;
 }
 
-.cancel_row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.cancel_row button {
-  background-color: transparent;
-  border: 0px;
-}
-
-.cancel_row button:hover {
-  color: gray;
+/* TEXT */
+h1, h2, h3 {
+  text-align: center;
 }
 
 h1 {
@@ -72,10 +62,6 @@ h2 {
 
 h3 {
   margin: 20px 0;
-}
-
-h1, h2, h3 {
-  text-align: center;
 }
 
 p {

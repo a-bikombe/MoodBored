@@ -5,27 +5,29 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './log-1-mood.component.html',
-    styleUrl: './log-1-mood.component.scss',
+    styleUrls: ['../log-new-mood.component.scss', './log-1-mood.component.scss']
 })
 export class Log1MoodComponent {
 	nextPage() {
 		var nextBtns = document.getElementsByClassName('next_btn');
 		nextBtns.item(0)?.addEventListener('click', function(e) {
-			document.getElementById('mood_page')?.setAttribute("hidden", "");
-			document.getElementById('emotion_page')?.removeAttribute("hidden");
+			document.getElementById('mood_page')?.setAttribute('style', 'display: none;');
+			document.getElementById('emotion_page')?.setAttribute('style', 'display: flex;');
 		});
 		nextBtns.item(1)?.addEventListener('click', function(e) {
-			document.getElementById('emotion_page')?.setAttribute("hidden", "");
-			document.getElementById('triggers_page')?.removeAttribute("hidden");
+			document.getElementById('emotion_page')?.setAttribute('style', 'display: none;');
+			document.getElementById('triggers_page')?.setAttribute('style', 'display: flex;');
 		});
 	}
 
 	cancel() {
-		var cancelMood = document.getElementById("cancel_mood");
+		let cancelMood = document.getElementById("cancel_mood");
+		let homePage = document.getElementById('home');
+        let logMoodPage = document.getElementById('log_new_mood');
+
 		cancelMood?.addEventListener('click', function(e) {
-			document.getElementById('mood_page')?.removeAttribute("hidden");
-			document.getElementById('emotion_page')?.setAttribute("hidden", "");
-			document.getElementById('triggers_page')?.setAttribute("hidden", "");
+			homePage?.setAttribute('style', 'display: flex;');
+			logMoodPage?.setAttribute('style', 'display: none;');
 		});
 	}
 }

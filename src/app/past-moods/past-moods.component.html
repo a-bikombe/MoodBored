@@ -1,9 +1,17 @@
-<div class="past_moods">
-	<h2 class="past_moods_list_label">Past Moods</h2>
-	<div class="past-moods-list_col">
-		<ul class="past-moods-list">
-			<li></li>
-		</ul>
-		<mood-detail></mood-detail>
-	</div>
+<h2 class="past_moods_list_label">Past Moods</h2>
+<div class="past-moods-list_col">
+    <ul class="past-moods-list">
+        <li></li>
+    </ul>
+    <mood-detail></mood-detail>
+</div>
+<div class="new_btn_row">
+    <button
+        type="button"
+        class="new_btn"
+        id="log_new_mood_btn"
+        (mousedown)="logMood()"
+    >
+        New
+    </button>
 </div>

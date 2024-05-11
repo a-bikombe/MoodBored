@@ -6,14 +6,24 @@
 	<header>
 		<h1>MoodBored</h1>
 	</header>
-    <div class="content">
-		<past-moods></past-moods>
-		<log-new-mood></log-new-mood>
+	<div class="navbar">
+		<a class="-brand" href="#">Home</a>
+		<a class="-brand" href="#stats">Stats</a>
+		<a class="-brand" href="#journal">Journal</a>
 	</div>
-	<div class="content">
+
+	<div id="home">
+		<past-moods></past-moods>
+	</div>
+
+	<div id="stats" hidden>
 		<stats></stats>
+	</div>
+
+	<div id="journal" hidden>
 		<journal></journal>
-    </div>
+	</div>
+	<!-- <log-new-mood></log-new-mood> -->
 </main>
 
 <router-outlet />

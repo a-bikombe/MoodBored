@@ -7,20 +7,20 @@
 		<h1>MoodBored</h1>
 	</header>
 	<div class="navbar">
-		<a class="-brand" href="#">Home</a>
-		<a class="-brand" href="#stats">Stats</a>
-		<a class="-brand" href="#journal">Journal</a>
+		<a class="nav_link" id="link_home" (click)="showPage('link_home', 'home')" href="#">Home</a>
+		<a class="nav_link" id="link_stats" (click)="showPage('link_stats', 'stats')" href="#stats">Stats</a>
+		<a class="nav_link" id="link_journal" (click)="showPage('link_journal', 'journal')" href="#journal">Journal</a>
 	</div>
 
-	<div id="home">
+	<div class="page_component" id="home">
 		<past-moods></past-moods>
 	</div>
 
-	<div id="stats" hidden>
+	<div class="page_component" id="stats">
 		<stats></stats>
 	</div>
 
-	<div id="journal" hidden>
+	<div class="page_component" id="journal">
 		<journal></journal>
 	</div>
 	<!-- <log-new-mood></log-new-mood> -->

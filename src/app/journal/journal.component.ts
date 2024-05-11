@@ -9,18 +9,24 @@ import { Component } from '@angular/core';
 })
 export class JournalComponent {
 	new() {
-		var newEntry = document.getElementById("new_btn");
-		newEntry?.addEventListener('click', function(e) {
-			document.getElementById('entries')?.setAttribute("hidden", "");
-			document.getElementById('journal_entry')?.removeAttribute("hidden");
+		let newEntryButton = document.getElementById("new_btn");
+		let journalPage = document.getElementById('entries');
+		let entryPage = document.getElementById('journal_entry');
+
+		newEntryButton?.addEventListener('click', function(e) {
+			journalPage?.setAttribute("style", "display: none;");
+			entryPage?.removeAttribute("style");
 		});
 	}
 
 	back() {
-		var backButton = document.getElementById("back_entry");
+		let backButton = document.getElementById("back_entry");
+		let journalPage = document.getElementById('entries');
+		let entryPage = document.getElementById('journal_entry');
+
 		backButton?.addEventListener('click', function(e) {
-			document.getElementById('journal_entry')?.setAttribute("hidden", "");
-			document.getElementById('entries')?.removeAttribute("hidden");
+			journalPage?.removeAttribute("style");
+			entryPage?.setAttribute("style", "display: none;");
 		});
 	}
 }

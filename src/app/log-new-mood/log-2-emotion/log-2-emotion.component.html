@@ -1,6 +1,6 @@
 <div class="log_page emotion" id="emotion_page" hidden>
 	<div class="cancel_row back">
-		<button type="button" class="back emotion">< Back</button>
+		<button type="button" class="back emotion" id="back_emotion" (mousedown)="previousPage()">< Back</button>
 		<button type="button" class="cancel" id="cancel_emotion" (mousedown)="cancel()">Cancel</button>
 	</div>
 	<div class="emotion_col">
@@ -26,6 +26,6 @@
 		</div>
 	</div>
 	<div class="next_row emotion">
-		<button type="button" class="next_btn emotion">Next</button>
+		<button type="button" class="next_btn emotion" id="next_btn_emotion" (mousedown)="nextPage()">Next</button>
 	</div>
 </div>

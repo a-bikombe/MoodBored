@@ -1,37 +1,4 @@
 /* PAGES */
 .log_page {
   flex-direction: column;
-}
-
-/* "CANCEL", "CANCEL/BACK", AND "NEXT" BUTTONS */
-.cancel_row, .next_row {
-  display: flex;
-}
-
-.cancel_row {
-  justify-content: flex-end;
-}
-
-.cancel_row.back {
-  justify-content: space-between;
-}
-
-.cancel_row button {
-  background-color: transparent;
-  border: 0px;
-}
-
-.cancel_row button:hover {
-  color: gray;
-}
-
-.next_row {
-  flex-direction: row;
-  justify-content: center;
-}
-
-.next_btn {
-  border-radius: 100px;
-  height: 45px;
-  width: 30vw;
 }/*# sourceMappingURL=log-new-mood.component.css.map */

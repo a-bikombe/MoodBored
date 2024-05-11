@@ -5,9 +5,17 @@ import { Component } from '@angular/core';
     standalone: true,
     imports: [],
     templateUrl: './log-3-triggers.component.html',
-    styleUrls: ['../log-new-mood.component.scss', './log-3-triggers.component.scss']
+    styleUrls: ['../../app.component.scss', '../log-new-mood.component.scss', './log-3-triggers.component.scss']
 })
 export class Log3TriggersComponent {
+	previousPage() {
+		let backBtn = document.getElementById('back_triggers');
+		backBtn?.addEventListener('click', function(e) {
+			document.getElementById('emotion_page')?.setAttribute('style', 'display: flex;');
+			document.getElementById('triggers_page')?.setAttribute('style', 'display: none;');
+		});
+	}
+
 	cancel() {
 		let cancelTriggers = document.getElementById("cancel_triggers");
 		let homePage = document.getElementById('home');

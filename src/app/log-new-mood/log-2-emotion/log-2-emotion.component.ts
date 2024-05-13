@@ -1,27 +1,35 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'log-2-emotion',
-    standalone: true,
-    imports: [],
-    templateUrl: './log-2-emotion.component.html',
-    styleUrls: ['../../app.component.scss', '../log-new-mood.component.scss', './log-2-emotion.component.scss'],
+	selector: 'log-2-emotion',
+	standalone: true,
+	imports: [],
+	templateUrl: './log-2-emotion.component.html',
+	styleUrls: [
+		'../../app.component.scss',
+		'../log-new-mood.component.scss',
+		'./log-2-emotion.component.scss',
+	],
 })
 export class Log2EmotionComponent {
 	previousPage() {
 		let backBtn = document.getElementById('back_emotion');
-		backBtn?.addEventListener('click', function(e) {
-			document.getElementById('mood_page')?.setAttribute('style', 'display: flex;');
-			document.getElementById('emotion_page')?.setAttribute('style', 'display: none;');
+		backBtn?.addEventListener('click', function (e) {
+			document
+				.getElementById('mood_page')
+				?.setAttribute('style', 'display: flex;');
+			document
+				.getElementById('emotion_page')
+				?.setAttribute('style', 'display: none;');
 		});
 	}
 
 	cancel() {
-		let cancelEmotion = document.getElementById("cancel_emotion");
+		let cancelEmotion = document.getElementById('cancel_emotion');
 		let homePage = document.getElementById('home');
 		let logMoodPage = document.getElementById('log_new_mood');
 
-		cancelEmotion?.addEventListener('click', function(e) {
+		cancelEmotion?.addEventListener('click', function (e) {
 			homePage?.setAttribute('style', 'display: flex;');
 			logMoodPage?.setAttribute('style', 'display: none;');
 		});
@@ -29,9 +37,13 @@ export class Log2EmotionComponent {
 
 	nextPage() {
 		let nextBtn = document.getElementById('next_btn_emotion');
-		nextBtn?.addEventListener('click', function(e) {
-			document.getElementById('emotion_page')?.setAttribute('style', 'display: none;');
-			document.getElementById('triggers_page')?.setAttribute('style', 'display: flex;');
+		nextBtn?.addEventListener('click', function (e) {
+			document
+				.getElementById('emotion_page')
+				?.setAttribute('style', 'display: none;');
+			document
+				.getElementById('triggers_page')
+				?.setAttribute('style', 'display: flex;');
 		});
 	}
 }

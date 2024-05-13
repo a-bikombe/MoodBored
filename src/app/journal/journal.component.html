@@ -1,28 +1,24 @@
 <div id="entries">
-    <h2 class="entry_list_label">All Entries</h2>
-    <div class="entry_list_row">
-        <ul class="entry_list">
-            <li></li>
-        </ul>
-    </div>
-    <div class="new_btn_row">
-        <button type="button" class="new_btn" id="new_btn" (mousedown)="new()">
-            New
-        </button>
-    </div>
+	<h2 class="entry_list_label">All Entries</h2>
+	<div class="entry_list_row">
+		<ul class="entry_list">
+			<li></li>
+		</ul>
+	</div>
+	<div class="new_btn_row">
+		<button type="button" class="new_btn" id="new_btn" (mousedown)="new()"> New </button>
+	</div>
 </div>
 <div class="page_component journal_entry_editor" id="journal_entry">
-    <div class="cancel_row back_only">
-        <button class="back entry" id="back_entry" (mousedown)="back()">
-            Back
-        </button>
-    </div>
-    <div class="journal_edit_col">
-        <h4 class="date">[ Date ]</h4>
-        <textarea class="entry_input" placeholder="Type Here"></textarea>
-    </div>
-    <div class="save_delete_row">
-        <button type="button" class="save_btn">Save</button>
-        <button type="button" class="delete_btn">Delete</button>
-    </div>
+	<div class="cancel_row back_only">
+		<button class="back entry" id="back_entry" (mousedown)="back()"> Back </button>
+	</div>
+	<div class="journal_edit_col">
+		<h4 class="date">[ Date ]</h4>
+		<textarea class="entry_input" placeholder="Type Here"></textarea>
+	</div>
+	<div class="save_delete_row">
+		<button type="button" class="save_btn">Save</button>
+		<button type="button" class="delete_btn">Delete</button>
+	</div>
 </div>

@@ -69,7 +69,8 @@ header {
 }
 
 /* "CANCEL", "CANCEL/BACK", AND "NEXT" BUTTONS */
-.cancel_row, .next_row {
+.cancel_row,
+.next_row {
   display: flex;
 }
 

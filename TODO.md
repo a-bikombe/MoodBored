@@ -2,81 +2,81 @@
 
 ## App
 
--   [x] Create components for features
--   [x] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [x] Create components for features
+- [x] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ---
 
 ## PastMoods
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ---
 
 ## Stats
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ---
 
 ## Journal
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ### Entry
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ---
 
 ## LogMood
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ### Mood
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ### Emotion
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ### Triggers
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling
 
 ---
 
 ## Day Detail
 
--   [ ] Code
-    -   [ ]
--   [ ] Layout
--   [ ] Styling
+- [ ] Code
+  - [ ]
+- [ ] Layout
+- [ ] Styling

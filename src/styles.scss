@@ -4,114 +4,185 @@
 @use 'variables' as *;
 @include mat.core();
 
-$MoodBored-theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
-  ),
-  density: (
-    scale: 0,
-  )
-));
+$MoodBored-theme: mat.define-theme((color: (theme-type: light,
+        primary: mat.$red-palette ),
+      density: (scale: 0,
+      )));
 
 :root {
   @include mat.all-component-themes($MoodBored-theme);
+  @include mat.typography-hierarchy($MoodBored-theme);
+  @include mat.color-variants-backwards-compatibility($MoodBored-theme);
 }
-
-// Comment out the line below if you want to use the pre-defined typography utility classes.
-// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
-@include mat.typography-hierarchy($MoodBored-theme);
-
-@include mat.color-variants-backwards-compatibility($MoodBored-theme);
 
 /* APP COLORS */
 :root {
-	--bright-blue: oklch(51.01% 0.274 263.83);
-	--electric-violet: oklch(53.18% 0.28 296.97);
-	--french-violet: oklch(47.66% 0.246 305.88);
-	--vivid-pink: oklch(69.02% 0.277 332.77);
-	--hot-red: oklch(61.42% 0.238 15.34);
-	--orange-red: oklch(63.32% 0.24 31.68);
-	--gray-900: oklch(19.37% 0.006 300.98);
-	--gray-700: oklch(36.98% 0.014 302.71);
-	--gray-400: oklch(70.9% 0.015 304.04);
-	--red-to-pink-to-purple-vertical-gradient: linear-gradient(180deg,
-			var(--orange-red) 0%,
-			var(--vivid-pink) 50%,
-			var(--electric-violet) 100%);
-	--red-to-pink-to-purple-horizontal-gradient: linear-gradient(90deg,
-			var(--orange-red) 0%,
-			var(--vivid-pink) 50%,
-			var(--electric-violet) 100%);
-	font-family: "Inter",
-		-apple-system,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		"Apple Color Emoji",
-		"Segoe UI Emoji",
-		"Segoe UI Symbol";
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  --bright-blue: oklch(51.01% 0.274 263.83);
+  --electric-violet: oklch(53.18% 0.28 296.97);
+  --french-violet: oklch(47.66% 0.246 305.88);
+  --vivid-pink: oklch(69.02% 0.277 332.77);
+  --hot-red: oklch(61.42% 0.238 15.34);
+  --orange-red: oklch(63.32% 0.24 31.68);
+  --gray-900: oklch(19.37% 0.006 300.98);
+  --gray-700: oklch(36.98% 0.014 302.71);
+  --gray-400: oklch(70.9% 0.015 304.04);
+  --red-to-pink-to-purple-vertical-gradient: linear-gradient(180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%);
+  --red-to-pink-to-purple-horizontal-gradient: linear-gradient(90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%);
+  font-family: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* SECTIONS */
 body {
-	background-color: $background-color;
+  background-color: $background-color;
 }
 
 /* COMPONENTS */
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
+}
+
+/* "CANCEL", "CANCEL/BACK", AND "NEXT" BUTTONS */
+
+.cancel_row,
+.next_row {
+  display: flex;
+}
+
+.cancel_row {
+  justify-content: flex-end;
+}
+
+.cancel_row.back {
+  justify-content: space-between;
+}
+
+.cancel_row.back_only {
+  justify-content: flex-start;
+}
+
+.cancel_row button {
+  background-color: transparent;
+  border: 0px;
+}
+
+.cancel_row button:hover {
+  color: $cancel-button-hover;
+}
+
+.new_btn_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.new_btn {
+  border-radius: 100px;
+  height: 45px;
+  width: 30vw;
+}
+
+.next_row {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.next_btn {
+  border-radius: 100px;
+  height: 45px;
+  width: 30vw;
 }
 
 /* TEXT */
 h1,
 h2,
 h3 {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	color: var(--gray-900);
-	font-family:
-		"Inter Tight",
-		-apple-system,
-		BlinkMacSystemFont,
-		"Segoe UI",
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		"Apple Color Emoji",
-		"Segoe UI Emoji",
-		"Segoe UI Symbol";
-	font-size: 3rem;
-	font-weight: 500;
-	letter-spacing: -0.125rem;
-	line-height: 100%;
-	margin: 0 0 10px;
-	width: 100%;
+  color: var(--gray-900);
+  font-family:
+    "Inter Tight",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.125rem;
+  line-height: 100%;
+  margin: 0 0 10px;
+  width: 100%;
 }
 
 h2 {
-	font-size: 2rem;
-	line-height: 1;
-	margin: 0 0 20px;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 0 20px;
 }
 
 h3 {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
 p {
-	color: var(--gray-700);
-	margin: 0;
+  color: var(--gray-700);
+  margin: 0;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-card {
+  background-color: $card-background-color;
+  box-shadow: none;
+  padding: 50px;
+
+  &.twoColumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

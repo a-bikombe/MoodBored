@@ -16,43 +16,39 @@
   }
 }
 
-
-
 header {
 	width: 100%;
 }
 
 /* NAVBAR */
 
-.navbar {
+.navBar {
 	align-items: center;
 	background-color: $navbar-background-color;
-	border: 3px solid $navbar-border-color;
 	border-radius: 500px;
+  box-shadow: $navbar-box-shadow;
 	display: flex;
 	flex-direction: row;
-	height: 10vh;
 	justify-content: space-evenly;
 	margin: 0 0 30px;
-	padding: 0 5vh;
 	width: 70%;
-}
 
-.navbar button {
-	background-color: transparent;
-	border: none;
-	color: $navbar-button-color;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-decoration: none;
-}
+  &-.link {
+    background-color: transparent;
+    border: none;
+    color: $navbar-link-color;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
 
-.navbar button:hover {
-	color: $navbar-button-color-hover;
-}
+    &:hover {
+      color: $navbar-link-color-hover;
+    }
 
-.navbar button:active {
-	color: $navbar-button-color-active;
+    &:active {
+      color: $navbar-link-color-active;
+    }
+  }
 }
 
 /* PAGES */
@@ -62,59 +58,6 @@ header {
 	flex-direction: column;
 	height: 100%;
 	width: 70%;
-}
-
-/* "NEW" BUTTON */
-
-.new_btn_row {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.new_btn {
-	border-radius: 100px;
-	height: 45px;
-	width: 30vw;
-}
-
-/* "CANCEL", "CANCEL/BACK", AND "NEXT" BUTTONS */
-
-.cancel_row,
-.next_row {
-	display: flex;
-}
-
-.cancel_row {
-	justify-content: flex-end;
-}
-
-.cancel_row.back {
-	justify-content: space-between;
-}
-
-.cancel_row.back_only {
-	justify-content: flex-start;
-}
-
-.cancel_row button {
-	background-color: transparent;
-	border: 0px;
-}
-
-.cancel_row button:hover {
-	color: $cancel-button-hover;
-}
-
-.next_row {
-	flex-direction: row;
-	justify-content: center;
-}
-
-.next_btn {
-	border-radius: 100px;
-	height: 45px;
-	width: 30vw;
 }
 
 /* RESPONSIVE SCREENS */

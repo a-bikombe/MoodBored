@@ -4,9 +4,17 @@
 <header>
   <h1> {{ 'titles.app' | translate }} </h1>
 </header>
-<div class="navbar">
-  <button type="button" class="nav-link" routerLink="../home"> {{ 'nav-links.home' | translate }} </button>
-  <button type="button" class="nav-link" routerLink="../stats"> {{ 'nav-links.stats' | translate }} </button>
-  <button type="button" class="nav-link" routerLink="./journal"> {{ 'nav-links.journal' | translate }} </button>
-</div>
-<router-outlet></router-outlet>
+<nav
+  class="navBar"
+  mat-tab-nav-bar
+  [tabPanel]="tabPanel"
+> @for (link of links; track link) { <a
+    class="navBar-link"
+    mat-tab-link
+    (click)="activeLink = link"
+    routerLink="{{ link }}"
+    [active]="activeLink == link"
+  > {{ 'nav-links.' + link | translate }} </a> } </nav>
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet></router-outlet>
+</mat-tab-nav-panel>

@@ -8,6 +8,7 @@ export const routes: Routes = [
   { path: 'home', component: PastMoodsComponent },
   { path: 'stats', component: StatsComponent },
   { path: 'journal', component: JournalComponent },
+  { path: '404', component: PageNotFoundComponent },
   { path: '',   redirectTo: 'home', pathMatch: 'full' }, // redirect to `first-component`
-  { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
+  { path: '**', redirectTo: '404', pathMatch: 'full' },  // Wildcard route for a 404 page
 ];

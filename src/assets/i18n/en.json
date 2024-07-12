@@ -78,6 +78,10 @@
     "stats": {
       "pleasant": "% of your moods in the past month have been Pleasant.",
       "unpleasant": "% of your moods in the past month have been Unpleasant."
+    },
+    "404": {
+      "title": "Uh Oh!",
+      "content": "You're somewhere you shouldn't be."
     }
   }
 }

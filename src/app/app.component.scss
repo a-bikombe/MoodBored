@@ -1,18 +1,24 @@
+@use 'variables' as *;
+
 /* SECTIONS */
 
-main {
+:host {
 	align-items: center;
 	box-sizing: inherit;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	min-height: 100%;
 	position: relative;
 	width: 100%;
+
+  &.appRoot {
+    margin-block: $app-margin;
+  }
 }
 
+
+
 header {
-	margin: 3vh;
 	width: 100%;
 }
 
@@ -20,8 +26,8 @@ header {
 
 .navbar {
 	align-items: center;
-	background-color: white;
-	border: 3px solid black;
+	background-color: $navbar-background-color;
+	border: 3px solid $navbar-border-color;
 	border-radius: 500px;
 	display: flex;
 	flex-direction: row;
@@ -35,18 +41,18 @@ header {
 .navbar button {
 	background-color: transparent;
 	border: none;
-	color: black;
+	color: $navbar-button-color;
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .navbar button:hover {
-	color: salmon;
+	color: $navbar-button-color-hover;
 }
 
 .navbar button:active {
-	color: darkred;
+	color: $navbar-button-color-active;
 }
 
 /* PAGES */
@@ -97,7 +103,7 @@ header {
 }
 
 .cancel_row button:hover {
-	color: gray;
+	color: $cancel-button-hover;
 }
 
 .next_row {

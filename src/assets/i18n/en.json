@@ -1,0 +1,10 @@
+{
+  "titles": {
+    "app": "MoodBored"
+  },
+  "nav-links": {
+    "home": "Home",
+    "stats": "Stats",
+    "journal": "Journal"
+  }
+}

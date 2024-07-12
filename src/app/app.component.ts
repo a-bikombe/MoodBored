@@ -1,40 +1,36 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { PastMoodsComponent } from './past-moods/past-moods.component';
 import { StatsComponent } from './stats/stats.component';
 import { JournalComponent } from './journal/journal.component';
 import { LogNewMoodComponent } from './log-new-mood/log-new-mood.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
 	imports: [
 		RouterOutlet,
+    RouterModule,
 		PastMoodsComponent,
 		StatsComponent,
 		JournalComponent,
 		LogNewMoodComponent,
+    TranslateModule
 	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
+  host: {
+    class: 'appRoot'
+  }
 })
 export class AppComponent {
+  constructor(public translate: TranslateService) {
+    translate.addLangs(['en', 'fr']);
+    translate.setDefaultLang('en');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|fr/) ? browserLang : 'en');
+  }
 	title = 'MoodBored';
-
-	// navlink: page link’s id
-	// page: page component’s id
-	showPage(navlink: string, page: string) {
-		let navLink = document.getElementById(navlink);
-		let pages = document.getElementsByClassName('page_component');
-
-		navLink?.addEventListener('click', function (e) {
-			for (let i = 0; i < pages.length; i++) {
-				if (pages.item(i)?.getAttribute('id') == page) {
-					pages.item(i)?.setAttribute('style', 'display: flex;');
-				} else {
-					pages.item(i)?.setAttribute('style', 'display: none;');
-				}
-			}
-		});
-	}
 }

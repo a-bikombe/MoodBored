@@ -1,26 +1,12 @@
 <!-- Thunkable: https://x.thunkable.com/projects/663287ed92f085b2c54c473a/eef54842-8150-4cae-94fb-4af46ab8c90f/designer -->
 <!-- GitHub: https://github.com/a-bikombe/MoodBored -->
 <!-- VS Code Documentation: https://code.visualstudio.com/docs/nodejs/angular-tutorial -->
-<main class="main">
-	<header>
-		<h1>MoodBored</h1>
-	</header>
-	<div class="navbar">
-		<button type="button" class="nav_link" id="link_home" (mousedown)="showPage('link_home', 'home')"> Home </button>
-		<button type="button" class="nav_link" id="link_stats" (mousedown)="showPage('link_stats', 'stats')"> Stats </button>
-		<button type="button" class="nav_link" id="link_journal" (mousedown)="showPage('link_journal', 'journal')"> Journal </button>
-	</div>
-	<div class="page_component" id="home" style="display: flex">
-		<past-moods></past-moods>
-	</div>
-	<div class="page_component" id="log_new_mood" style="display: none">
-		<log-new-mood></log-new-mood>
-	</div>
-	<div class="page_component" id="stats" style="display: none">
-		<stats></stats>
-	</div>
-	<div class="page_component" id="journal" style="display: none">
-		<journal></journal>
-	</div>
-</main>
-<router-outlet />
+<header>
+  <h1> {{ 'titles.app' | translate }} </h1>
+</header>
+<div class="navbar">
+  <button type="button" class="nav-link" routerLink="../home"> {{ 'nav-links.home' | translate }} </button>
+  <button type="button" class="nav-link" routerLink="../stats"> {{ 'nav-links.stats' | translate }} </button>
+  <button type="button" class="nav-link" routerLink="./journal"> {{ 'nav-links.journal' | translate }} </button>
+</div>
+<router-outlet></router-outlet>

@@ -1,6 +1,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
+@use 'variables' as *;
 @include mat.core();
 
 $MoodBored-theme: mat.define-theme((
@@ -23,6 +24,7 @@ $MoodBored-theme: mat.define-theme((
 @include mat.typography-hierarchy($MoodBored-theme);
 
 @include mat.color-variants-backwards-compatibility($MoodBored-theme);
+
 /* APP COLORS */
 :root {
 	--bright-blue: oklch(51.01% 0.274 263.83);
@@ -60,8 +62,7 @@ $MoodBored-theme: mat.define-theme((
 
 /* SECTIONS */
 body {
-	background-color: #eaeaf0;
-	margin: 3vh 0px;
+	background-color: $background-color;
 }
 
 /* COMPONENTS */

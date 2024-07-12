@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MoodDetailComponent } from './mood-detail/mood-detail.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'past-moods',
 	standalone: true,
-	imports: [MoodDetailComponent],
+	imports: [MoodDetailComponent, TranslateModule],
 	templateUrl: './past-moods.component.html',
 	styleUrls: ['../app.component.scss', './past-moods.component.scss'],
 })

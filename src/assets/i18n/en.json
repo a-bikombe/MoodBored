@@ -1,10 +1,83 @@
 {
   "titles": {
-    "app": "MoodBored"
+    "app": "MoodBored",
+    "home": "Past Moods",
+    "journal": "All Entries",
+    "stats": "Mood Stats"
   },
   "nav-links": {
     "home": "Home",
     "stats": "Stats",
     "journal": "Journal"
+  },
+  "labels": {
+    "buttons": {
+      "back": "Back",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "done": "Done",
+      "new": "New",
+      "save": "Save"
+    },
+    "log": {
+      "mood": {
+        "title": "Choose how you're feeling right now",
+        "slider": "Neutral",
+        "pleasant": "Very Pleasant",
+        "unpleasant": "Very Unpleasant"
+      },
+      "emotion": {
+        "title": "What best describes this feeling?",
+        "slider": "Neutral",
+        "pleasant": {
+          "happy": "Happy",
+          "excited": "Excited",
+          "grateful": "Grateful"
+        },
+        "neutral": {
+          "indifferent": "Indifferent",
+          "calm": "Calm",
+          "peaceful": "Peaceful"
+        },
+        "unpleasant": {
+          "sad": "Sad",
+          "angry": "Angry",
+          "anxious": "Anxious"
+        }
+      },
+      "triggers": {
+        "title": "What best describes this feeling?",
+        "options": {
+          "health": "Health",
+          "selfCare": "Self-Care",
+          "hobbies": "Hobbies",
+          "family": "Family",
+          "friends": "Friends",
+          "partner": "Partner",
+          "work": "Work",
+          "school": "School",
+          "identity": "Identity",
+          "other": "Other:"
+        }
+      }
+    },
+    "moodDetail": {
+      "date": "[ Date ]",
+      "mood": "[ Mood ]",
+      "emotion": "[ Emotion ]",
+      "triggers": "[ Triggers ]"
+    },
+    "ui": {
+      "confirmation": "Are You Sure?",
+      "pageNotFound": "Oops lmao",
+      "placeholder": "Typer Here"
+    },
+    "journal": {
+      "typeHere": "typeHere"
+    },
+    "stats": {
+      "pleasant": "% of your moods in the past month have been Pleasant.",
+      "unpleasant": "% of your moods in the past month have been Unpleasant."
+    }
   }
 }

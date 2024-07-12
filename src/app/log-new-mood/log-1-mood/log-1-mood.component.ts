@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'log-1-mood',
 	standalone: true,
-	imports: [],
+	imports: [TranslateModule],
 	templateUrl: './log-1-mood.component.html',
 	styleUrls: [
 		'../../app.component.scss',

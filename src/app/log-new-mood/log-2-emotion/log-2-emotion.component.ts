@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'log-2-emotion',
 	standalone: true,
-	imports: [],
+	imports: [TranslateModule],
 	templateUrl: './log-2-emotion.component.html',
 	styleUrls: [
 		'../../app.component.scss',

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'page-not-found',
 	standalone: true,
-	imports: [],
+	imports: [TranslateModule],
 	templateUrl: './page-not-found.component.html',
 	styleUrls: ['../app.component.scss'],
 })

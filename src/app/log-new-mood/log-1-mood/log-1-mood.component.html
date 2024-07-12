@@ -1,19 +1,19 @@
 <div class="log_page mood" id="mood_page">
 	<div class="cancel_row">
-		<button type="button" class="cancel" id="cancel_mood" (mousedown)="cancel()"> Cancel </button>
+		<button type="button" class="cancel" id="cancel_mood" (mousedown)="cancel()"> {{ 'labels.buttons.cancel' | translate }} </button>
 	</div>
 	<div class="mood_col">
-		<h3 class="help_label mood">Choose how you're feeling right now</h3>
+		<h3 class="help_label mood"> {{ 'labels.log.mood.title' | translate }} </h3>
 		<div class="slider_col">
-			<h4 class="slider_label">Neutral</h4>
+			<h4 class="slider_label"> {{ 'labels.log.mood.slider' | translate }} </h4>
 			<input type="range" class="mood_slider" id="mood_slider" min="0" max="10" step="1" />
 			<div class="unpleasant_pleasant_labels_row">
-				<p class="very_unpleasant_label">Very Unpleasant</p>
-				<p class="very_pleasant_label">Very Pleasant</p>
+				<p class="very_unpleasant_label"> {{ 'labels.log.mood.unpleasant' | translate }} </p>
+				<p class="very_pleasant_label"> {{ 'labels.log.mood.pleasant' | translate }} </p>
 			</div>
 		</div>
 		<div class="next_row mood">
-			<button type="button" class="next_btn mood" id="next_btn_mood" (mousedown)="nextPage()"> Next </button>
+			<button type="button" class="next_btn mood" id="next_btn_mood" (mousedown)="nextPage()"> {{ 'labels.buttons.next' | translate }} </button>
 		</div>
 	</div>
 </div>

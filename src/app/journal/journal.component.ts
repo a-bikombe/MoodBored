@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'journal',
 	standalone: true,
-	imports: [],
+	imports: [TranslateModule],
 	templateUrl: './journal.component.html',
 	styleUrls: ['../app.component.scss', './journal.component.scss'],
 })

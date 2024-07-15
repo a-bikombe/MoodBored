@@ -1,10 +1,7 @@
 <h2 class="past_moods_list_label"> {{ 'titles.home' | translate }} </h2>
 <div class="past-moods-list_col">
-	<ul class="past-moods-list">
-		<li></li>
-	</ul>
-	<mood-detail></mood-detail>
+  <ul class="past-moods-list">
+    <li> @for (mood of moods; track mood) { <a mat-button class="mood-list-item" (click)="showMood()" routerLink="../mood-detail"> {{ mood }} </a> } </li>
+  </ul>
 </div>
-<div class="new_btn_row">
-	<button type="button" class="new_btn" id="log_new_mood_btn" (mousedown)="logMood()"> {{ 'labels.buttons.new' | translate }} </button>
-</div>
+<a mat-flat-button routerLink="../log-mood"> {{ 'labels.buttons.new' | translate }} </a>

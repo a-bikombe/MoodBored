@@ -21,14 +21,14 @@ $mb-orange-80: #f1caa7;
 $mb-orange-90: #f8e4d3;
 
 $mb-yellow-10: #332b00;
-$mb-yellow-10: #665700;
-$mb-yellow-10: #998200;
-$mb-yellow-10: #ccad00;
+$mb-yellow-20: #665700;
+$mb-yellow-30: #998200;
+$mb-yellow-40: #ccad00;
 $mb-yellow: #ffd900;
-$mb-yellow-10: #ffe866;
-$mb-yellow-10: #fff099;
-$mb-yellow-10: #fff7cc;
-$mb-yellow-10: #fff7cc;
+$mb-yellow-60: #ffe866;
+$mb-yellow-70: #fff099;
+$mb-yellow-80: #fff7cc;
+$mb-yellow-90: #fff7cc;
 
 $mb-green-10: #0f240f;
 $mb-green-20: #1f471f;
@@ -61,41 +61,39 @@ $mb-violet-80: #d7bbdd;
 $mb-violet-90: #ebddee;
 
 $mb-pink-10: #2b0815;
-$mb-pink-10: #56102b;
-$mb-pink-10: #811840;
-$mb-pink-10: #ab2156;
+$mb-pink-20: #56102b;
+$mb-pink-30: #811840;
+$mb-pink-40: #ab2156;
 $mb-pink: #d6296b;
-$mb-pink-10: #de5489;
-$mb-pink-10: #e77ea6;
-$mb-pink-10: #efa9c4;
-$mb-pink-10: #f7d4e1;
+$mb-pink-60: #de5489;
+$mb-pink-70: #e77ea6;
+$mb-pink-80: #efa9c4;
+$mb-pink-90: #f7d4e1;
 
 $mb-black: #000000;
-$mb-gray-100: #1a1a1a;
-$mb-gray-200: #333333;
-$mb-gray-300: #4d4d4d;
-$mb-gray-400: #666666;
+$mb-gray-10: #1a1a1a;
+$mb-gray-20: #333333;
+$mb-gray-30: #4d4d4d;
+$mb-gray-40: #666666;
 $mb-gray: #808080;
-$mb-gray-600: #999999;
-$mb-gray-700: #b3b3b3;
-$mb-gray-800: #cccccc;
-$mb-gray-900: #e6e6e6;
+$mb-gray-60: #999999;
+$mb-gray-70: #b3b3b3;
+$mb-gray-80: #cccccc;
+$mb-gray-90: #e6e6e6;
 $mb-white: #ffffff;
 
 
 /* BACKGROUND COLOR */
 
-$background-color: $mb-gray-900;
-
+$background-color: $mb-violet-90;
 $card-background-color: $mb-white;
-
 $navbar-background-color: $mb-white;
 
 /* TEXT COLOR */
 
 $cancel-button-hover: $mb-gray;
 
-$navbar-border-color: $mb-gray-800;
+$navbar-border-color: $mb-gray-80;
 
 $navbar-box-shadow: 1px 1px 1px $mb-gray;
 

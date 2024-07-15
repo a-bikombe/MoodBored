@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'journal',
 	standalone: true,
-	imports: [TranslateModule],
+	imports: [TranslateModule, MatButtonModule, RouterModule],
 	templateUrl: './journal.component.html',
 	styleUrls: ['../app.component.scss', './journal.component.scss'],
 })

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'log-1-mood',
 	standalone: true,
-	imports: [TranslateModule],
+	imports: [TranslateModule, MatButtonModule, RouterModule],
 	templateUrl: './log-1-mood.component.html',
 	styleUrls: [
 		'../../app.component.scss',

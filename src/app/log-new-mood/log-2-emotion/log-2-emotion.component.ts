@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
 	selector: 'log-2-emotion',
 	standalone: true,
-	imports: [TranslateModule],
+	imports: [TranslateModule, MatButtonModule, RouterModule],
 	templateUrl: './log-2-emotion.component.html',
 	styleUrls: [
 		'../../app.component.scss',

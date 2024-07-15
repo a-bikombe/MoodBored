@@ -1,29 +1,29 @@
-<div class="log_page emotion" id="emotion_page" hidden>
+<div class="log_page emotion" id="emotion_page">
 	<div class="cancel_row back">
-		<button type="button" class="back emotion" id="back_emotion" (mousedown)="previousPage()"> {{ 'labels.buttons.back' | translate }} </button>
-		<button type="button" class="cancel" id="cancel_emotion" (mousedown)="cancel()"> {{ 'labels.buttons.cancel' | translate }} </button>
+    <a mat-button routerLink="../log-mood"> {{ 'labels.buttons.back' | translate }} </a>
+    <a mat-button routerLink="../home"> {{ 'labels.buttons.cancel' | translate }} </a>
 	</div>
 	<div class="emotion_col">
 		<h4 class="mood_label emotion"> {{ 'labels.moodDetail.mood' | translate }} </h4>
 		<p class="help_label emotion"> {{ 'labels.log.emotion.title' | translate }} </p>
-		<h5 class="emotion_display"> {{ 'labels.moodDetail.emotion' | translate }} </h5>
+		<h5 class="display emotion"> {{ 'labels.moodDetail.emotion' | translate }} </h5>
 		<div class="emotion_row pleasant">
-			<button id="happy_btn"> {{ 'labels.emotion.pleasant.happy' | translate }} </button>
-			<button id="excited_btn"> {{ 'labels.emotion.pleasant.excited' | translate }} </button>
-			<button id="grateful_btn"> {{ 'labels.emotion.pleasant.grateful' | translate }} </button>
+			<button mat-button class="btn-secondary" id="happy_btn"> {{ 'labels.log.emotion.pleasant.happy' | translate }} </button>
+			<button mat-button class="btn-secondary" id="excited_btn"> {{ 'labels.log.emotion.pleasant.excited' | translate }} </button>
+			<button mat-button class="btn-secondary" id="grateful_btn"> {{ 'labels.log.emotion.pleasant.grateful' | translate }} </button>
 		</div>
 		<div class="emotion_row neutral">
-			<button id="indifferent_btn"> {{ 'labels.emotion.neutral.indifferent' | translate }} </button>
-			<button id="calm_btn"> {{ 'labels.emotion.neutral.calm' | translate }} </button>
-			<button id="peaceful_btn"> {{ 'labels.emotion.neutral.peaceful' | translate }} </button>
+			<button mat-button class="btn-secondary" id="indifferent_btn"> {{ 'labels.log.emotion.neutral.indifferent' | translate }} </button>
+			<button mat-button class="btn-secondary" id="calm_btn"> {{ 'labels.log.emotion.neutral.calm' | translate }} </button>
+			<button mat-button class="btn-secondary" id="peaceful_btn"> {{ 'labels.log.emotion.neutral.peaceful' | translate }} </button>
 		</div>
 		<div class="emotion_row unpleasant">
-			<button id="sad_btn"> {{ 'labels.emotion.unpleasant.sad' | translate }} </button>
-			<button id="angry_btn"> {{ 'labels.emotion.unpleasant.angry' | translate }} </button>
-			<button id="anxious_btn"> {{ 'labels.emotion.unpleasant.anxious' | translate }} </button>
+			<button mat-button class="btn-secondary" id="sad_btn"> {{ 'labels.log.emotion.unpleasant.sad' | translate }} </button>
+			<button mat-button class="btn-secondary" id="angry_btn"> {{ 'labels.log.emotion.unpleasant.angry' | translate }} </button>
+			<button mat-button class="btn-secondary" id="anxious_btn"> {{ 'labels.log.emotion.unpleasant.anxious' | translate }} </button>
 		</div>
 	</div>
-	<div class="next_row emotion">
-		<button type="button" class="next_btn emotion" id="next_btn_emotion" (mousedown)="nextPage()"> {{ 'labels.buttons.next' | translate }} </button>
-	</div>
+	<div class="next_row">
+    <a mat-flat-button routerLink="../log-triggers"> {{ 'labels.buttons.next' | translate }} </a>
+  </div>
 </div>

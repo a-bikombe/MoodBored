@@ -38,6 +38,6 @@ export class AppComponent {
   }
   title = 'MoodBored';
 
-  links = ['home', 'stats', 'journal', 'd'];
+  links = ['home', 'stats', 'journal'];
   activeLink = this.links[0];
 }

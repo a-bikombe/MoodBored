@@ -17,6 +17,7 @@
       "delete": "Delete",
       "done": "Done",
       "new": "New",
+      "next": "Next",
       "save": "Save"
     },
     "log": {
@@ -70,7 +71,7 @@
     "ui": {
       "confirmation": "Are You Sure?",
       "pageNotFound": "Oops lmao",
-      "placeholder": "Typer Here"
+      "placeholder": "Type Here"
     },
     "journal": {
       "typeHere": "typeHere"

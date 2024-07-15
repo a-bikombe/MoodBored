@@ -1,6 +1,6 @@
 <div class="log_page mood" id="mood_page">
 	<div class="cancel_row">
-		<button type="button" class="cancel" id="cancel_mood" (mousedown)="cancel()"> {{ 'labels.buttons.cancel' | translate }} </button>
+    <a mat-button routerLink="../home"> {{ 'labels.buttons.cancel' | translate }} </a>
 	</div>
 	<div class="mood_col">
 		<h3 class="help_label mood"> {{ 'labels.log.mood.title' | translate }} </h3>
@@ -12,8 +12,9 @@
 				<p class="very_pleasant_label"> {{ 'labels.log.mood.pleasant' | translate }} </p>
 			</div>
 		</div>
-		<div class="next_row mood">
-			<button type="button" class="next_btn mood" id="next_btn_mood" (mousedown)="nextPage()"> {{ 'labels.buttons.next' | translate }} </button>
+
+		<div class="next_row">
+			<a mat-flat-button routerLink="../log-emotion"> {{ 'labels.buttons.next' | translate }} </a>
 		</div>
 	</div>
 </div>

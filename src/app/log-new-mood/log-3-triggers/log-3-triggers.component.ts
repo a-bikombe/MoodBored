@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'log-3-triggers',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, MatButtonModule, MatFormFieldModule, RouterModule],
   templateUrl: './log-3-triggers.component.html',
   styleUrls: [
     '../../app.component.scss',

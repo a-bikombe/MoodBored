@@ -4,10 +4,10 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-	selector: 'mood-detail',
+	selector: 'journal',
 	standalone: true,
 	imports: [TranslateModule, MatButtonModule, RouterModule],
-	templateUrl: './mood-detail.component.html',
-	styleUrl: './mood-detail.component.scss',
+	templateUrl: './new-entry.component.html',
+	styleUrls: ['../../app.component.scss', '../journal.component.scss'],
 })
-export class MoodDetailComponent { }
+export class NewEntryComponent {}

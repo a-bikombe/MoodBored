@@ -1,6 +1,6 @@
-<div class="mood_detail" hidden>
+<div class="mood_detail">
   <div class="cancel_row back_only">
-    <button class="back detail"> {{ 'labels.buttons.back' | translate }} </button>
+    <a mat-button routerLink="../home"> {{ 'labels.buttons.back' | translate }} </a>
   </div>
   <div class="mood_object_col">
     <h4 class="date"> {{ 'labels.moodDetail.date' | translate }} </h4>
@@ -10,6 +10,6 @@
   </div>
   <div class="remove_col triggers">
     <p class="remove_help_label" hidden="true"> {{ 'labels.ui.confirmation' | translate }} </p>
-    <button class="remove_btn"> {{ 'labels.buttons.done' | translate }} </button>
+    <button mat-flat-button class="delete_btn"> {{ 'labels.buttons.delete' | translate }} </button>
   </div>
 </div>

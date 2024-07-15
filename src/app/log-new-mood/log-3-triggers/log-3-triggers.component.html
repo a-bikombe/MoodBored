@@ -1,36 +1,36 @@
-<div class="log_page triggers" id="triggers_page" hidden>
+<div class="log_page triggers" id="triggers_page">
 	<div class="cancel_row back">
-		<button type="button" class="back triggers" id="back_triggers" (mousedown)="previousPage()"> {{ 'labels.buttons.back' | translate }} </button>
-		<button type="button" class="cancel" id="cancel_triggers" (mousedown)="cancel()"> {{ 'labels.buttons.cancel' | translate }} </button>
+      <a mat-button routerLink="../log-emotion"> {{ 'labels.buttons.back' | translate }} </a>
+			<a mat-button routerLink="../home"> {{ 'labels.buttons.cancel' | translate }} </a>
 	</div>
 	<div class="trigger_col">
 		<h4 class="mood_label triggers"> {{ 'labels.moodDetail.mood' | translate }} </h4>
-		<h5 class="emotion_label"> {{ 'labels.moodDetail.emotion' | translate }} </h5>
+		<h5 class="emotion_label triggers"> {{ 'labels.moodDetail.emotion' | translate }} </h5>
 		<p class="help_label triggers"> {{ 'labels.log.triggers.title' | translate }} </p>
-		<h5 class="trigger_display"> {{ 'labels.moodDetail.triggers' | translate }} </h5>
+		<h5 class="display triggers"> {{ 'labels.moodDetail.triggers' | translate }} </h5>
 		<div class="triggers_col">
-			<div class="triggers_row">
-				<button id="health_btn"> {{ 'labels.log.triggers.options.health' | translate }} </button>
-				<button id="selfcare_btn"> {{ 'labels.log.triggers.options.selfCare' | translate }} </button>
-				<button id="hobbies_btn"> {{ 'labels.log.triggers.options.hobbies' | translate }} </button>
+			<div class="row triggers">
+				<button mat-button class="btn-secondary" id="health_btn"> {{ 'labels.log.triggers.options.health' | translate }} </button>
+				<button mat-button class="btn-secondary" id="selfcare_btn"> {{ 'labels.log.triggers.options.selfCare' | translate }} </button>
+				<button mat-button class="btn-secondary" id="hobbies_btn"> {{ 'labels.log.triggers.options.hobbies' | translate }} </button>
 			</div>
-			<div class="triggers_row">
-				<button id="family_btn"> {{ 'labels.log.triggers.options.family' | translate }} </button>
-				<button id="friends_btn"> {{ 'labels.log.triggers.options.friends' | translate }} </button>
-				<button id="partner_btn"> {{ 'labels.log.triggers.options.partner' | translate }} </button>
+			<div class="row triggers">
+				<button mat-button class="btn-secondary" id="family_btn"> {{ 'labels.log.triggers.options.family' | translate }} </button>
+				<button mat-button class="btn-secondary" id="friends_btn"> {{ 'labels.log.triggers.options.friends' | translate }} </button>
+				<button mat-button class="btn-secondary" id="partner_btn"> {{ 'labels.log.triggers.options.partner' | translate }} </button>
 			</div>
-			<div class="triggers_row">
-				<button id="work_btn"> {{ 'labels.log.triggers.options.work' | translate }} </button>
-				<button id="school_btn"> {{ 'labels.log.triggers.options.school' | translate }} </button>
-				<button id="identity_btn"> {{ 'labels.log.triggers.options.identity' | translate }} </button>
+			<div class="row triggers">
+				<button mat-button class="btn-secondary" id="work_btn"> {{ 'labels.log.triggers.options.work' | translate }} </button>
+				<button mat-button class="btn-secondary" id="school_btn"> {{ 'labels.log.triggers.options.school' | translate }} </button>
+				<button mat-button class="btn-secondary" id="identity_btn"> {{ 'labels.log.triggers.options.identity' | translate }} </button>
 			</div>
-			<div class="other_row">
+			<div class="row triggers">
 				<p class="other_label"> {{ 'labels.log.triggers.options.other' | translate }} </p>
-				<input type="text" class="other_input" placeholder=" {{ 'labels.ui.placeholder' | translate }} " />
+				<input matInput class="other_input" placeholder=" {{ 'labels.ui.placeholder' | translate }} " />
 			</div>
 		</div>
 	</div>
-	<div class="next_row triggers">
-		<button class="next_btn triggers" id="done_btn" (mousedown)="done()"> {{ 'labels.buttons.done' | translate }} </button>
-	</div>
+		<div class="next_row">
+      <button mat-flat-button routerLink="../home" id="done_btn" (mousedown)="done()"> {{ 'labels.buttons.done' | translate }} </button>
+		</div>
 </div>

@@ -1,0 +1,13 @@
+<div class="page_component journal_entry_editor" id="journal_entry">
+	<div class="cancel_row back_only">
+		<a mat-button routerLink="../journal"> {{ 'labels.buttons.back' | translate }} </a>
+	</div>
+	<div class="journal_edit_col">
+		<h4 class="date">  {{ 'labels.moodDetail.date' | translate }} </h4>
+		<textarea class="entry_input" placeholder=" {{ 'labels.journal.typeHere' | translate }} "></textarea>
+	</div>
+	<div class="save_delete_row">
+    <a mat-flat-button routerLink="../journal" class="save_btn"> {{ 'labels.buttons.save' | translate }} </a>
+    <a mat-flat-button routerLink="../journal" class="delete_btn"> {{ 'labels.buttons.delete' | translate }} </a>
+	</div>
+</div>
